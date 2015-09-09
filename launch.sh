@@ -3,7 +3,7 @@
 if [ -e /var/run/docker.sock ]; then
   echo "****  Launching   ****"
   sleep 1
-  docker run -it --privileged busybox ls /dev
+  docker run --privileged busybox ls /dev
   echo "**** Cute kittens ****"
 else
   echo "Error: Missing docker.sock"
